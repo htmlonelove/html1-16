@@ -133,6 +133,7 @@
   background-color: #0055b9;
   border: none;
   width: 145px;
+  cursor: pointer;
 }
 
 .header__burger-box {
@@ -195,6 +196,7 @@
   z-index: 2;
   height: calc(100vh - 65px);
   align-content: center;
+  cursor: default;
 }
 
 .open-menu__inner {
