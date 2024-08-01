@@ -29,3 +29,13 @@
         url("/fonts/DINPro-Bold.woff") format("woff");
         font-display: swap;
 }
+
+@font-face {
+  font-family: "DIN Pro";
+  font-style: normal;
+  font-weight: 600;
+  src: local("DIN Pro"),
+        url("/fonts/din_pro_medium.woff2") format("woff2"), 
+        url("/fonts/din_pro_medium.woff") format("woff");
+        font-display: swap;
+}

@@ -21,25 +21,52 @@
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a class="header__nav-link">О предприятии</a>
+                  <a class="header__nav-link" href="#">О предприятии</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link">Направления деятельности</a>
+                  <a class="header__nav-link" href="#">Направления деятельности</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link">Новости</a>
+                  <a class="header__nav-link" href="#">Новости</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link">Вакансии</a>
+                  <a class="header__nav-link" href="#">Вакансии</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link">Контакты</a>
+                  <a class="header__nav-link" href="#">Контакты</a>
                 </li>
               </ul>
-              <button class="header__burger" type="button">
+              <!-- Открытое состояние меню реализуется добавлением класса "active" к классу "header__burger" -->
+              <button class="header__burger active" type="button">
                 Меню
                 <span class="header__burger-box">
-                  <!-- <span class="header__burger-inner"></span> -->
+                  <div class="open-menu">
+                    <div class="open-menu__inner">
+                      <ul class="open-menu__list">
+                          <a class="open-menu__link" href="#">О предприятии</a>
+                          <a class="open-menu__link" href="#">Руководство</a>
+                          <a class="open-menu__link" href="#">История завода</a>
+                          <a class="open-menu__link" href="#">История заказов</a>
+                      </ul>
+                      <ul class="open-menu__list">
+                          <a class="open-menu__link" href="#">Раскрытие информации</a>
+                          <a class="open-menu__link" href="#">Торги и закупки</a>
+                          <a class="open-menu__link" href="#">Вакансии</a>
+                          <a class="open-menu__link" href="#">Новости</a>
+                          <a class="open-menu__link" href="#">Контакты</a>
+                      </ul>
+                      <ul class="open-menu__list">
+                          <p class="open-menu__title">Направления деятельности</p>
+                          <a class="open-menu__sublink" href="#">Судоремонт</a>
+                          <a class="open-menu__sublink" href="#">Судостроение</a>
+                          <a class="open-menu__sublink" href="#">Сварочное производство</a>
+                          <a class="open-menu__sublink" href="#">Демонтажно-монтажные работы</a>
+                          <a class="open-menu__sublink" href="#">Трубопроводное производство</a>
+                          <a class="open-menu__sublink" href="#">Малярно-изоляционно-гуммировочные работы</a>
+                          <a class="open-menu__sublink" href="#">Лабораторный контроль</a>
+                      </ul>
+                    </div>        
+                  </div>
                 </span>
               </button>
             </nav>

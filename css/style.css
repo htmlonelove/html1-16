@@ -75,7 +75,7 @@
   align-content: center;
   background-color: #ffffff;
   transition: width .6s cubic-bezier(.55,0,.1,1),
-  background-color .6s cubic-bezier(.55,0,.1,1);
+              background-color .6s cubic-bezier(.55,0,.1,1);
 }
 
 .header__nav-item::before {
@@ -111,6 +111,7 @@
   padding: 26px 30px 26px 35px;
   transform: skew(28deg);
   overflow: hidden;
+  cursor: pointer;
 }
 
 .header__burger {
@@ -167,15 +168,90 @@
   transition: bottom .3s .15s, transform .3s;
 }
 
-.header__burger-box.active::before {
+.header__burger.active .header__burger-box::before {
   top: 6px;
   transform: rotate(45deg);
   box-shadow: 0 6px 0 rgba(0,0,0,0);
   transition: box-shadow .15s, top .3s, transform .3s .15s;
 }
 
-.header__burger-box.active::after {
+.header__burger.active .header__burger-box::after {
   bottom: 6px;
   transform: rotate(-45deg);
   transition: bottom .3s, transform .3s .15s;
+}
+
+.header__burger.active .open-menu {
+  display: block;
+}
+
+.open-menu {
+  position: fixed;
+  display: none;
+  top: 65px;
+  left: 0;
+  width: 100vw;
+  background-color: #0055b9;
+  z-index: 2;
+  height: calc(100vh - 65px);
+  align-content: center;
+}
+
+.open-menu__inner {
+  display: grid;
+  width: 1000px;
+  margin: 0 auto;
+  grid-template-columns: 27% 28.2% auto;
+  max-height: 80%;
+  overflow: hidden;
+}
+
+.open-menu__list {
+  display: flex;
+  flex-flow: column wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.open-menu__link {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: auto;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0 0 24px;
+  cursor: pointer;
+  transition: opacity .6s cubic-bezier(.55,0,.1,1)
+}
+
+.open-menu__title {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: auto;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0 0 16px;
+}
+
+.open-menu__sublink {
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: auto;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform:none;
+  margin: 0 0 14px;
+  cursor: pointer;
+  transition: opacity .6s cubic-bezier(.55,0,.1,1)
+}
+
+.open-menu__link:hover,
+.open-menu__sublink:hover {
+  opacity: 0.8;
 }
