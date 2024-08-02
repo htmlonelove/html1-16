@@ -4,8 +4,7 @@
   font-family: "DIN Pro";
   font-style: normal;
   font-weight: 700;
-  src: local("DIN Pro Bold"),
-        url("/fonts/DINPro-CondensedBold.woff2") format("woff2"), 
+  src:  url("/fonts/DINPro-CondensedBold.woff2") format("woff2"), 
         url("/fonts/DINPro-CondensedBold.woff") format("woff");
         font-display: swap;
 }
@@ -14,8 +13,7 @@
   font-family: "DIN Pro";
   font-style: normal;
   font-weight: 400;
-  src: local("DIN Pro"),
-        url("/fonts/DINPro.woff2") format("woff2"), 
+  src:  url("/fonts/DINPro.woff2") format("woff2"), 
         url("/fonts/DINPro.woff") format("woff");
         font-display: swap;
 }
@@ -24,8 +22,7 @@
   font-family: "DIN Pro";
   font-style: normal;
   font-weight: 500;
-  src: local("DIN Pro"),
-        url("/fonts/DINPro-Bold.woff2") format("woff2"), 
+  src:  url("/fonts/DINPro-Bold.woff2") format("woff2"), 
         url("/fonts/DINPro-Bold.woff") format("woff");
         font-display: swap;
 }
@@ -34,8 +31,7 @@
   font-family: "DIN Pro";
   font-style: normal;
   font-weight: 600;
-  src: local("DIN Pro"),
-        url("/fonts/din_pro_medium.woff2") format("woff2"), 
+  src:  url("/fonts/din_pro_medium.woff2") format("woff2"), 
         url("/fonts/din_pro_medium.woff") format("woff");
         font-display: swap;
 }
