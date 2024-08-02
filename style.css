@@ -8,6 +8,15 @@
 }
 
 @font-face {
+  font-family: "DINPro";
+  src: url('fonts/din-pro-medium.woff') format('woff1'),
+       url('fonts/din-pro-medium.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "DINPro Condensed";
   src: url('fonts/DINPro-CondensedBold.woff2') format('woff2'),
        url('fonts/DINPro-CondensedBold.woff') format('woff');
