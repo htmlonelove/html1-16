@@ -460,7 +460,7 @@
       #dfe4ee 26%,
       #dfe4ee 100%
   );
-  clip-path: polygon(100% 0, 100% 97%, 99% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% -10%, 100% 97%, 99% 100%, 0 100%, 0 -10%);
 }
 
 .events__titles {
