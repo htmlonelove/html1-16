@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "DIN Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/din-pro-medium.ttf");
+  font-display: swap;
+}
+
+@font-face {
+    font-family: "DIN Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/din-pro-medium.ttf");
+    font-display: swap;
+  }
+
+  body {
+    font-family: "DIN Pro";
+    font-size: 18px;
+    line-height: 27px;
+    background-color: #dfe4ee;
+  }
+
+  .job-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+
+  .engineer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .job-title-full {
+    list-style-type: none;
+  }
+
+  .position {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24,2px;
+  }
+
+  .details {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19,8px;
+  }
