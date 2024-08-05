@@ -1,3 +1,27 @@
+@font-face {
+	font-family: "DIN Pro";
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/dinpro_bold.woff2") format("woff2");
+	font-display: swap;
+  }
+
+  @font-face {
+	font-family: "DIN Pro";
+	font-style: normal;
+	font-weight: 500;
+	src: url("fonts/dinpro_medium.woff2") format("woff2");
+	font-display: swap;
+  }
+
+  @font-face {
+	font-family: "DIN Pro";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/DINPro.woff2") format("woff2");
+	font-display: swap;
+  }
+
 *,
 *::before,
 *::after {
@@ -41,4 +65,140 @@ body {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-  }
+}
+
+.button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+/* Вакансии */
+
+.title-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 72px;
+}
+
+.employees__title {
+	color: #0055B9;
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+	padding-left: 57px;
+	background-image: url("./img/icons/red_rectangle.svg");
+	background-repeat: no-repeat;
+	background-size: 12px 12px;
+	background-position: 35px 4px;
+}
+
+.employees__buttons-wrapper {
+	display: flex;
+}
+
+.employees__button {
+	background-color: #FFFFFF;
+	width: 36px;
+	height: 36px;
+}
+
+.button-prev {
+	background-image: url("./img/icons/arrow_back.svg");
+	background-repeat: no-repeat;
+	background-size: 6px 6px;
+	background-position: center;
+}
+
+.button-next {
+	background-image: url("./img/icons/arrow_ahead.svg");
+	background-repeat: no-repeat;
+	background-size: 6px 6px;
+	background-position: center;
+}
+
+.button-more {
+	background-color: #0055B9;
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFFFFF;
+	width: 151px;
+	height: 36px;
+	background-image: url("./img/icons/arrow_more.svg");
+	background-repeat: no-repeat;
+	background-size: 6px 6px;
+	background-position: 106px 15px;
+}
+
+
+.employee__wrapper {
+	background-color: #DFE4EE;
+	display: flex;
+	position: relative;
+	margin-bottom: 96px;
+	max-width: 1134px;
+	min-height: 368px;
+}
+
+.employee__wrapper::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 73px;
+	height: 73px;
+	position: absolute;
+	background-image: url('./img/icons/white_rectangle.svg');
+	top: 0;
+	right: 0;
+}
+
+.employee__img {
+	width: 440px;
+	height: 368px;
+	padding-right: 60px;
+	object-fit: cover;
+}
+
+.employee__description {
+	align-self: center;
+	padding: 15px;
+}
+
+.employee__name {
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 32px;
+	line-height: 35.2px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: left;
+	color: #2F2E3E;
+	max-width: 478px;
+	margin-bottom: 10px;
+}
+
+.employee__position {
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18.2px;
+	font-weight: 500;
+	text-align: left;
+	color: #0055B9;
+}
+
+.employee__text {
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: 400;
+	text-align: left;
+	color: #2F2E3E;
+	max-width: 560px;
+}
