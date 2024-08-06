@@ -62,8 +62,9 @@
 	<br>
 	<br>
 	<section class="resume">
+		<button class="resume__button-close" type="button"></button>
 		<h2 class="resume__title">Отправить резюме</h2>
-		<form action="./" method="get">
+		<form class="resume__form" action="./" method="post">
 			<fieldset class="resume__fieldset">
 
 				<div class="select-wrapper">
@@ -78,8 +79,8 @@
 				<input class="resume__email" type="email" name="email" id="email" placeholder="E-mail" required>
 				<label class="input-file">
 					<span class="input-file-text" type="text"></span>
-					<input class="resume__file" type="file" name="file" placeholder="Прикрепить резюме" accept="pdf, doc, docs, jpg">
-					<button type="button" class="input-file-btn">Обзор</button>
+					<input class="resume__file" type="file" name="file" placeholder="Прикрепить резюме" accept="pdf, doc, docs, jpg" style="display: none;">
+					<button type="file" class="input-file-btn">Обзор</button>
 				</label>
 			</fieldset>
 			<button class="resume__btn" type="submit">Откликнуться</button>
