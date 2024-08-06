@@ -177,7 +177,6 @@ body {
 	display: block;
 	width: 73px;
 	height: 73px;
-	position: absolute;
 	background-image: url('./img/icons/white_rectangle.svg');
 	top: 0;
 	right: 0;
@@ -225,4 +224,202 @@ body {
 	color: #2F2E3E;
 	opacity: 0.7;
 	max-width: 560px;
+}
+
+
+
+/* resume */
+
+.resume {
+	display: flex;
+	flex-direction: column;
+	width: 603px;
+	height: 784px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	padding-left: 53px;
+}
+
+.resume__fieldset {
+	border: none;
+	padding: 0;
+}
+
+.select-wrapper::after {
+	background-image: url('./img/icons/arrow_selector.svg');
+	background-repeat: no-repeat;
+	background-size: 6px 6px;
+}
+
+.resume__position {
+	width: 496px;
+	height: 48px;
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 21.5px;
+	font-weight: 400;
+	text-align: left;
+	color: #2F2E3E;
+	opacity: 0.7;
+	padding-left: 21px;
+	padding-right: 142px;
+	margin-bottom: 20px;
+	border: 1px solid #B9C8D2;
+}
+
+.resume__name {
+	width: 496px;
+	height: 48px;
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 21.5px;
+	font-weight: 400;
+	text-align: left;
+	color: #2F2E3E;
+	opacity: 0.7;
+	padding-left: 21px;
+	margin-bottom: 20px;
+	border: 1px solid #B9C8D2;
+}
+
+.resume__birth {
+	width: 496px;
+	height: 48px;
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 21.5px;
+	font-weight: 400;
+	text-align: left;
+	color: #2F2E3E;
+	opacity: 0.7;
+	padding-left: 21px;
+	margin-bottom: 20px;
+	border: 1px solid #B9C8D2;
+}
+
+.resume__city {
+	width: 496px;
+	height: 48px;
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 21.5px;
+	font-weight: 400;
+	text-align: left;
+	color: #2F2E3E;
+	opacity: 0.7;
+	padding-left: 21px;
+	margin-bottom: 20px;
+	border: 1px solid #B9C8D2;
+}
+
+.resume__tel {
+	width: 496px;
+	height: 48px;
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 21.5px;
+	font-weight: 400;
+	text-align: left;
+	color: #2F2E3E;
+	opacity: 0.7;
+	padding-left: 21px;
+	margin-bottom: 20px;
+	border: 1px solid #B9C8D2;
+}
+
+.resume__email {
+	width: 496px;
+	height: 48px;
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 21.5px;
+	font-weight: 400;
+	text-align: left;
+	color: #2F2E3E;
+	opacity: 0.7;
+	padding-left: 21px;
+	margin-bottom: 20px;
+	border: 1px solid #B9C8D2;
+}
+
+
+.input-file {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.input-file-text {
+	width: 377px;
+	height: 48px;
+	padding: 0 10px;
+	text-align: left;
+	height: 48px;
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	border: 1px solid #B9C8D2;
+}
+.input-file-btn {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	vertical-align: middle;
+	color: #2F2E3E;
+	text-align: center;
+	background-color: #B9C8D2;
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	height: 48px;
+	width: 119px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+}
+
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.resume__btn {
+	width: 373px;
+	height: 48px;
+	background-color: #0055B9;
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border: none;
+	cursor: pointer;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.resume__text {
+	font-family: "DIN Pro", "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 400;
+	color: #2F2E3E;
+	opacity: 0.7;
+	width: 330px;
+	text-align: left;
+}
+
+.resume__link {
+	text-decoration: underline;
+	cursor: pointer;
 }

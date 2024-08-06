@@ -55,6 +55,39 @@
 			</ul>
 		</div>
 	</section>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<section class="resume">
+		<h2 class="resume__title">Отправить резюме</h2>
+		<form action="./" method="get">
+			<fieldset class="resume__fieldset">
+
+				<div class="select-wrapper">
+					<select name="position" id="position" class="resume__position">
+						<option value="">Инженер 1 категории лаборатории виброакустических испытаний</option>
+					</select>
+				</div>
+				<label> <input class="resume__name" type="text" name="name" id="name" placeholder="ФИО" required></label>
+				<input class="resume__birth" type="number" name="yearOfBirth" id="yearOfBirth" placeholder="Год рождения" required>
+				<input class="resume__city" type="text" name="city" id="city" placeholder="Город проживания" required>
+				<input class="resume__tel" type="text" name="telNumber" id="telNumber" placeholder="Номер телефона" required>
+				<input class="resume__email" type="email" name="email" id="email" placeholder="E-mail" required>
+				<label class="input-file">
+					<span class="input-file-text" type="text"></span>
+					<input class="resume__file" type="file" name="file" placeholder="Прикрепить резюме" accept="pdf, doc, docs, jpg">
+					<button type="button" class="input-file-btn">Обзор</button>
+				</label>
+			</fieldset>
+			<button class="resume__btn" type="submit">Откликнуться</button>
+		</form>
+		<p class="resume__text">Нажатием на кнопку я разрешаю использовать мои данные
+			в соответствии с <a class="resume__link link-reset" href="./">политикой конфиденциальности</a></p>
+
+	</section>
 </body>
 
 </html>
