@@ -24,7 +24,7 @@
 			<ul class="list-reset employees__list">
 				<li class="list-reset employees__item employees__item--active">
 					<div class="employee__wrapper">
-						<img src="./img/GoryanovVV.jpg" alt="Владимир Владимирович Горяйнов." width="440" height="368" class="employee__img">
+						<img src="./img/GoryanovVV.jpg" alt="Владимир Владимирович Горяйнов." width="500" height=" 368" class="employee__img">
 						<div class="employee__description">
 							<h3 class="employee__name">Владимир Владимирович<br> Горяйнов</h3>
 							<p class="employee__position">Исполнительный директор</p>
@@ -34,7 +34,7 @@
 				</li>
 				<li class="list-reset employees__item">
 					<div class="employee__wrapper">
-						<img src="./img/PertovaMM.jpg" alt="Фамиля Имя Отчество." width="440" height="368" class="employee__img">
+						<img src="./img/PertovaMM.jpg" alt="Фамиля Имя Отчество." width="500" height="368" class="employee__img">
 						<div class="employee__description">
 							<h3 class="employee__name">Фамиля Имя<br> Отчество</h3>
 							<p class="employee__position">Должность</p>
@@ -44,7 +44,7 @@
 				</li>
 				<li class="list-reset employees__item">
 					<div class="employee__wrapper">
-						<img src="./img/IvanovII.jpg" alt="Фамиля Имя Отчество." width="440" height="368" class="employee__img">
+						<img src="./img/IvanovII.jpg" alt="Фамиля Имя Отчество." width="500" height="368" class="employee__img">
 						<div class="employee__description">
 							<h3 class="employee__name">Фамиля Имя<br> Отчество</h3>
 							<p class="employee__position">Должность</p>
@@ -62,7 +62,10 @@
 	<br>
 	<br>
 	<section class="resume">
-		<button class="resume__button-close" type="button"></button>
+		<div class="button-close--container">
+			<button class="resume__button-close" type="button"></button>
+		</div>
+
 		<h2 class="resume__title">Отправить резюме</h2>
 		<form class="resume__form" action="./" method="post">
 			<fieldset class="resume__fieldset">
@@ -78,8 +81,8 @@
 				<input class="resume__tel" type="text" name="telNumber" id="telNumber" placeholder="Номер телефона" required>
 				<input class="resume__email" type="email" name="email" id="email" placeholder="E-mail" required>
 				<label class="input-file">
-					<span class="input-file-text" type="text"></span>
-					<input class="resume__file" type="file" name="file" placeholder="Прикрепить резюме" accept="pdf, doc, docs, jpg" style="display: none;">
+					<span class="input-file-text" type="text">Прикрепить резюме</span>
+					<input class="resume__file" type="file" name="resume_uploads" value="" id="resume_uploads" accept=".pdf, .doc, .docs, .jpg" style="display: none;">
 					<button type="file" class="input-file-btn">Обзор</button>
 				</label>
 			</fieldset>
