@@ -7,13 +7,13 @@
   </head>
 
   <body>
-    <section class="vacancies">
+   <!--section class="vacancies">
         <ul class="list">
             <li class="job-title">
                 <h2 class="position">Ведущий специалист отдела охраны труда</h2>
                    <p class="details">Подробнее</p>
             </li>
-            <li class="job-title">
+            <li class="job-title blue">
                 <h2 class="position">Ведущий специалист (по морской безопасности)</h2>
                     <p class="details">Подробнее</p>
                 </li>
@@ -52,14 +52,155 @@
                 <p class="description">от 50 000 до 62 000 руб.</p>
                 <h3 class="title">Характер работы</h3>
                 <p class="description">постоянно</p>
-                <button class="button" type="submit">Откликнуться</button>
+                <div class="respond">
+                <button class="button" type="submit" href="#">Откликнуться</button>
+                </div>
             </li>
             <li class="job-title">
                 <h2 class="position">Токарь 5-6 разряда</h2>
                  <p class="details">Подробнее</p>
                 </li>
         </ul>
-    </section>
+    </section> -->
 
+
+
+
+    <div class="wrapper">
+        <div class="accordion">
+            <div class="accordion-item">
+                <input class="accordion-item__input" type="radio" name="accordion" id="accordion-1">
+                <label class="accordion-item__trigger" for="accordion-1">
+                    Ведущий специалист отдела охраны труда
+                    <p class="details">Подробнее 
+
+                    </p>
+                </label>
+                <div class="accordion-item__content">Content 1</div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-item blue">
+                <input class="accordion-item__input" type="radio" name="accordion" id="accordion-2">
+                <label class="accordion-item__trigger" for="accordion-2">
+                    Ведущий специалист (по морской безопасности)
+                    <p class="details blue">Подробнее</p>
+                </label>
+                <div class="accordion-item__content">Content 2</div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <input class="accordion-item__input" type="radio" name="accordion" id="accordion-3">
+                <label class="accordion-item__trigger" for="accordion-3">
+                    Токарь 5-6 разряда
+                    <p class="details">Подробнее</p>
+                </label>
+                <div class="accordion-item__content"></div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <input class="accordion-item__input" type="radio" name="accordion" id="accordion-4">
+                <label class="accordion-item__trigger accordion-4" for="accordion-4">
+                    Инженер лаборатории технической диагностики
+                    <p class="details">Свернуть</p>
+                </label>
+                <div class="accordion-item__content">
+                    <h3 class="title">Обязанности</h3>
+                    <p class="description">Выполнять измерения уровней воздушного шума и локальной вибрации пневмоинструмента.<br> 
+                        Выполнять измерения уровней воздушного шума и общей вибрации на производственных рабочих местах по
+                        графику проверок состяния охраны труда. Выполнять измерения уровней вибрации механизмов на заказах, на
+                        стедах в соответствии с методикой контроля и нормирования вибрации и шума судовых машин на заводских
+                        стендах. Осуществлять контроль качества ремонта и монтажа оборудования в части обеспечения требуемых
+                        виброаккустических характеристик и звукоизоляционной эффективности амортизирующих конструкций и креплений.
+                        Выполнять диагностику виброактивного оборудования методами вибродиагностики, инфракрасной термографии,
+                        эндоскопии. Выполнять контроль сопротивления изоляции конструктивно-технологических средств электрической
+                        защиты. Выдавать  в установленном порядке техническое заключение по результатам проводимых измерений.
+                        Выполнять балансировку механизмов в собственных опорах на заказах и стендах.
+                    </p>
+                    <h3 class="title">Требования</h3>
+                    <p class="description">Высшее образование по техническим направлениям подготовки, приоритетные направления "Приоростроение",
+                        "Акустические приборы и системы", "Морская акустика и гидрофизика".<br>
+                        Стаж работы инженером/специалистом  по вибродиагностике, акустике или лаборатории технической диагностики в 
+                        приоритете Уверенное владение персональным компьютером и программными продуктами MS Office.
+                    </p>
+                    <h3 class="title">Условия</h3>
+                    <p class="description">Иногородним работникам компенсируются расходы (частично или полностью) за аренду жилого помещения или за
+                        проживание в гостиницах
+                    </p>
+                    <h3 class="title">Заработная плата</h3>
+                    <p class="description">от 50 000 до 62 000 руб.</p>
+                    <h3 class="title">Характер работы</h3>
+                    <p class="description">постоянно</p>
+                    <div class="respond">
+                        <button class="button" type="submit" href="#">Откликнуться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <input class="accordion-item__input" type="radio" name="accordion" id="accordion-5">
+                <label class="accordion-item__trigger" for="accordion-5">
+                    Токарь 5-6 разряда
+                    <p class="details">Подробнее</p>
+                </label>
+                <div class="accordion-item__content"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <section class="contacts">
+            <img class="logo" src="img/logo.svg" width="147" height="36" alt="Логотип «Дальневосточный завод «Звезда»">
+            <p class="name">Акционерное Общество<br> «Дальневосточный завод<br> «Звезда»</p>
+            <h2 class="address">Адрес:</h2>
+            <p class="contacts-address">
+                692801, Россия, Приморский край,<br> г. Большой Камень, ул. Степана Лебедева, здание 1
+            </p>
+            <h2 class="phone">Телефоны</h2>
+            <p class="contacts-phone">
+                8 (42335) 5-1-40<br>
+                8 (42335) 4-11-74 (приемная директора)
+                8 (42335) 4-05-85 (факс)    
+            </p>
+            <h2 class="email">E-mail:</h2>
+            <p class="email-contacts">
+                dvzzvezda@dvzz.ru
+            </p>
+        </section>
+        <section class="about-company">
+            <div>
+            <p class="company-about"><a class="company" href="#">О предприятии</a></p>
+            <a class="company" href="#">Руководстово</a>
+            <p class="history"><a class="company" href="#">История завода</a></p>
+            <a class="company" href="#">История заказов</a>
+            </div>
+        </section>
+        <section class="company-information">
+            <div>
+            <p class="disclosure"><a class="information" href="#">Раскрытие информации</a></p>
+            <a class="information" href="#">Торги и закупки</a>
+            <p class="vacancy"><a class="information" href="#">Вакансии</a></p>
+            <p class="news"><a class="information" href="#">Новости</a></p>
+            <a class="information" href="#">Контакты</a> 
+            </div>
+        </section>
+        <section class="company-area">
+            <div class="area-activity">Направления деятельности</div>
+            <p class="area">Судоремонт</p>
+            <p class="area">Судостроение</p>
+            <p class="area">Сварочное производство</p>
+            <p class="area">Демонтажно-монтажные работы</p>
+            <p class="area">Трубопроводное производство</p>
+            <p class="area">Малярно-изоляционно-гуммировочные работы</p>
+            <p class="area">Лабораторный контроль</p>
+        </section>
+    </footer>
   </body>
 </html>
