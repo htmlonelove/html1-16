@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "DIN Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/DINPro.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DIN Pro";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/DINPro-CondensedBold.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 27px;
+    color: #2F2E3E;
+    min-width: 1920px;
+}
+
+.page-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    padding-left: 38px;
+    margin-left: 196px;
+    margin-bottom: 96px;
+}
+
+.about-info {
+    display: grid;
+    grid-template-columns: 714px 645px;
+    gap: 50px;
+}
+
+.section-title {
+    padding: 0;
+    padding-left: 22px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #0055B9;
+    margin-bottom: 30px;
+    position: relative;
+    font-family: DIN Pro;
+    letter-spacing: 0.02em;
+}
+
+.section-title::before {
+    content: "";
+    border-left: 12px solid transparent;
+    border-bottom: 12px solid #FF0000;
+    position: absolute;
+    left: 2px;
+    top: 5px;
+}
+
+
+.about-caption {
+    margin: 0;
+    padding: 0;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 46.2px;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.about-caption::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 95%;
+    top: 5px;
+    background-color: #FF0000;
+    left: -38px;
+}
+
+
+.about-description {
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+}
+
+.more-link {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 0.7;
+    padding: 0;
+    letter-spacing: 0.02em;
+}
