@@ -63,6 +63,16 @@ img {
   display: block;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .area-of-activity {
   padding: 96px 197px 96px 196px;
 }
@@ -80,8 +90,6 @@ img {
 
 .section_title::before {
   content: '';
-  width: 0;
-  height: 0;
   border-left: 12px solid transparent;
   border-bottom: 12px solid #FF0000;
   position: absolute;
@@ -287,4 +295,96 @@ img {
 
 .activity-card:hover::before {
   background-color: transparent; 
+}
+
+.about-company {
+  margin: 82px 196px 87px;
+}
+
+.text-about-company{
+  display: grid;
+  grid-template-columns: 688px 764px;
+  gap: 76px;
+}
+
+.title-about {
+  margin: 20px 57px 24px;
+}
+
+.article-content {
+  opacity: 0.7;
+  width: 654px;
+  padding-left: 33px;
+}
+
+.article-content p {
+  margin: 27px 0;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.article-content p:first-of-type {
+  margin-top: 0;
+}
+
+.article-content p:last-of-type {
+  margin-bottom: 0;
+}
+
+.services-with-img {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 58px;
+}
+
+.view_zvezda { 
+  height: 444px;
+  width: 764px;
+  display: block;
+  align-self: flex-start; 
+}
+
+.triangle {
+  position: absolute;
+  bottom: 0;
+  border-left: 99px solid #F8F9FB;
+  border-top: 88px solid transparent;
+}
+
+.services-title {
+  margin: 0 58px 30px;
+}
+
+.services-title::before {
+  left: -30px;
+}
+
+.services_list {
+  list-style-type: none;
+  padding: 0 0 0 28px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 283px 283px;
+  gap: 30px 85px;
+}
+
+.services-name {
+  font-family: "DINPro Condensed";
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: auto 0 15px 0;
+}
+
+.services-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.7;
 }
