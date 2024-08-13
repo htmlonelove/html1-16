@@ -77,8 +77,7 @@ body {
 }
 
 
-.about-caption,
-.vacancy-caption {
+.about-caption {
     margin: 0;
     padding: 0;
     font-family: "DIN Pro", sans-serif;
@@ -109,7 +108,6 @@ body {
 }
 
 .more-link {
-    display: inline-block;
     text-decoration: none;
     font-family: "DIN Pro bold";
     cursor: pointer;
@@ -119,23 +117,21 @@ body {
     font-weight: 400;
     line-height: 18px;
     opacity: 0.7;
-    padding: 0;
     letter-spacing: 0.02em;
     position: relative;
-    padding: 9px 2px;
+    padding: 9px 33px 9px 2px;
     transition: transform 0.5s;
 }
 
 .more-link-icon {
-    display: inline-block;
     width: 23px;
     height: 23px;
     border: 1px solid #b9c8d2;
     border-radius: 50%;
     position: absolute;
-    left: 145px;
     top: 5px;
     transition: transform 0.5s;
+    right: 0;
 }
 
 .more-link-icon svg {
@@ -158,9 +154,43 @@ body {
     padding-left: 38px;
 }
 
+.vacancy-title {
+    margin-bottom: 17px;
+}
+
 .vacancy-info {
     display: grid;
-    grid-template-columns: 654pxx 766px;
+    grid-template-columns: 654px 766px;
     gap: 72px;
+}
+
+.vacancy-caption {
+    margin: 0;
+    padding: 0;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 46.2px;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.vacancy-caption::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 95%;
+    top: 5px;
+    background-color: #ff0000;
+    left: -38px;
+}
+
+.vacancy-description {
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+    margin-bottom: 25px;
 }
 
