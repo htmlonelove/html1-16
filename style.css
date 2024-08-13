@@ -206,10 +206,8 @@ body {
     margin-bottom: 25px;
 }
 
-.vacancy-section-right {
+.vacancy-image-container {
     position: relative;
-    margin: 0;
-    padding: 0;
     padding-top: 5px;
 }
 
