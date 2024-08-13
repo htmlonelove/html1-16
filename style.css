@@ -22,6 +22,12 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
 body {
     margin: 0;
     font-family: "DIN Pro", sans-serif;
@@ -32,6 +38,7 @@ body {
     color: #2F2E3E;
     min-width: 1920px;
     background-color: #f8f9fb;
+    height: 100%;
 }
 
 .page-container {
@@ -39,6 +46,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    min-height: 100%;
 }
 
 .about {
@@ -153,6 +161,7 @@ body {
 .vacancy {
     width: 1532px;
     margin-left: 196px;
+    margin-bottom: 96px;
     padding-left: 38px;
     box-sizing: border-box;
 }
@@ -206,6 +215,8 @@ body {
 
 .vacancy-image {
     display: block;
+    object-fit: cover;
+    height: 100%;
 }
 
 .triangle {
