@@ -31,6 +31,7 @@ body {
     line-height: 27px;
     color: #2F2E3E;
     min-width: 1920px;
+    background-color: #f8f9fb;
 }
 
 .page-container {
@@ -44,6 +45,7 @@ body {
     padding-left: 38px;
     margin-left: 196px;
     margin-bottom: 96px;
+    box-sizing: border-box;
 }
 
 .about-info {
@@ -141,17 +143,18 @@ body {
 .more-link:hover .more-link-icon {
     transition: transform 0.5s;
     transform: translateX(2px);
-  }
+}
 
 .more-link-icon:hover {
     transition: transform 0.5s;
     transform: translateX(2px);
-  }
+}
 
 .vacancy {
     width: 1532px;
     margin-left: 196px;
     padding-left: 38px;
+    box-sizing: border-box;
 }
 
 .vacancy-title {
@@ -194,3 +197,21 @@ body {
     margin-bottom: 25px;
 }
 
+.vacancy-section-right {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+
+.vacancy-image {
+    display: block;
+}
+
+.triangle {
+    position: absolute;
+    bottom: 0;
+    border-left: 73px solid #f8f9fb;
+    border-top: 73px solid transparent;
+    left: 0;
+}
