@@ -47,13 +47,16 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    width: 1920px;
 }
 
 .about {
     padding-left: 38px;
     margin-left: 196px;
+    margin: 0 auto;
     margin-bottom: 96px;
     box-sizing: border-box;
+    width: 1532px;
 }
 
 .about-info {
@@ -160,7 +163,7 @@ body {
 
 .vacancy {
     width: 1532px;
-    margin-left: 196px;
+    margin: 0 auto;
     margin-bottom: 96px;
     padding-left: 38px;
     box-sizing: border-box;
