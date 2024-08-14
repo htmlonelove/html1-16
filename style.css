@@ -287,6 +287,12 @@ body {
 	background-color: transparent;
 }
 
+.resume__button-close:hover {
+	outline: 1px solid #000000;
+	padding: 1px;
+	background-position: center;
+}
+
 .button-close--container {
 	position: sticky;
 	top: 0;
@@ -457,6 +463,14 @@ body {
 	margin: 0;
 }
 
+.input-file-btn:hover {
+	outline: 1px solid #000000;
+}
+
+.input-file-btn:focus {
+	outline: 1px solid #000000;
+}
+
 .resume__btn {
 	width: 373px;
 	height: 48px;
@@ -473,6 +487,14 @@ body {
 	margin-bottom: 7px;
 }
 
+.resume__btn:hover {
+	outline: 1px solid #000000;
+}
+
+.resume__btn:focus {
+	outline: 1px solid #000000;
+}
+
 .resume__text {
 	font-family: "DIN Pro", "Arial", sans-serif;
 	font-size: 12px;
@@ -487,6 +509,10 @@ body {
 .resume__link {
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+.resume__link:hover {
+	color: #000000;
 }
 
 
