@@ -1,17 +1,34 @@
-@font-face {
-  font-family: "DIN Pro";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../html1-16/fonts/dinpro_condensedblack.otf");
-  font-display: swap;
-}
+ @font-face {
+	font-family: "DIN Pro bold";
+	font-style: normal;
+	font-weight: 700;
+	src: url("./fonts/dinpro_bold.woff2") format("woff2");
+	font-display: swap;
+  }
 
-@font-face {
+  @font-face {
     font-family: "DIN Pro";
     font-style: normal;
-    font-weight: 400;
-    src: url("..//html1-16/fonts/din-pro-medium.ttf");
-    font-display: swap;
+    font-weight: 700;
+    src:  url("./fonts/DINPro-CondensedBold.woff2") format("woff2"), 
+          url("./fonts/DINPro-CondensedBold.woff") format("woff");
+          font-display: swap;
+  }
+
+  @font-face {
+	font-family: "DIN Pro";
+	font-style: normal;
+	font-weight: 500;
+	src: url("./fonts/dinpro_medium.woff2") format("woff2");
+	font-display: swap;
+  }
+
+  @font-face {
+	font-family: "DIN Pro";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./fonts/DINPro.woff2") format("woff2");
+	font-display: swap;
   }
 
   body {
@@ -31,47 +48,40 @@
     padding-left: 20px;
   }
 
-  .job-title {
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    border: 1px #ffffff solid;
-  }
-
-  .engineer {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .job-title-full {
-    list-style-type: none;
-  }
-
-  .position {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 24,2px;
-    color: #2f2e3e;
-  }
-
   .details {
+    font-family: "DIN Pro bold";
     display: inline;
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase; 
-    background-image: url("..//html1-16/img/Vector.svg");
-    background-repeat: no-repeat;
-    background-position: right 22px center;
     padding-right: 50px;
     float: right;
+    padding-top: 23px;
+    margin-right: 13px;
   }
 
-  .title {
-    text-transform: uppercase;
+  .details:hover {
+    transition: margin-left 4s;
+    opacity: 0.8;
+  }
+
+  .details-up {
+    font-family: "DIN Pro bold";
+    display: inline;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 19,8px;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase; 
+    padding-right: 50px;
+    float: right;
+    padding-top: 23px;
+    margin-right: 13px;
+  }
+
+    .details-up:hover {
+    transition: margin-left 4s;
+    opacity: 0.8;
   }
 
   .blue {
@@ -89,15 +99,21 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 18px; 
-    background-image: url("..//html1-16/img/crumbs.svg");
+    background-image: url("./img/crumbs.svg");
     background-repeat: no-repeat;
     background-position: right 10px center;
+    margin-top: 5px;
+    margin-bottom: -10px;
   }
 
   .description {
     opacity: 70%;
     width: 996px;
     padding-bottom: 18px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "DIN Pro","Arial", sans-serif;
   }
 
   .respond {
@@ -106,11 +122,16 @@
   }
 
   .accordion {
-
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
   }
 
   .accordion-item {
     position: relative;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
   }
 
   .accordion-item__input {
@@ -123,9 +144,6 @@
   .accordion-item__trigger {
     display: block;
     padding: 30px;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 24,2px;
     color: #2f2e3e;
     text-transform: uppercase;
     font-weight: 700;
@@ -136,6 +154,10 @@
 
   .accordion-4 {
     border-top: 1px solid #ffffff;
+  }
+
+  .accordion-2 {
+    color: #ffffff;
   }
 
   .accordion-item__content {
@@ -158,17 +180,8 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
+    padding-top: 6px;
   }
-/*
-  .details::before {
-    position: absolute;
-    content: " ";
-    background-image: url("..//html1-16/img/Vector.svg");
-    background-repeat: no-repeat; 
-    background-position: left 50px center;
-    height: 10px;
-    width: 10px;
-  }*/
 
   .circle {
     display: inline-block;
@@ -187,16 +200,6 @@
     height: 10px;
     width: 10px;
   }
-/*
-  .circle::before {
-    position: absolute;
-    content: " ";
-    background-image: url("..//html1-16/img/Vector.svg");
-    background-repeat: no-repeat; 
-    background-position: center;
-    height: 10px;
-    width: 10px;
-  }*/
 
   .details::after {
     position: absolute;
@@ -211,6 +214,28 @@
       background-position: left 20px center;
       margin-right: 10px;
       margin-left: 10px;
+      background-image: url("./img/vector.svg");
+    background-repeat: no-repeat; 
+    background-position: center;
+  }
+
+  .details-up::after {
+    position: absolute;
+    content: " ";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      line-height: 50px;
+      text-align: center;
+      border-radius: 50%;
+      border: 2px solid rgba(185, 200, 210, 1); 
+      background-position: left 20px center;
+      margin-right: 10px;
+      margin-left: 10px;
+      background-image: url("./img/vector.svg");
+    background-repeat: no-repeat; 
+    background-position: center;
+    transform: rotate(180deg);
   }
 
  
@@ -230,12 +255,14 @@
 
   .about-company {
     width: 129px;
-    padding-right: 140px;
+    padding-right: 138px;
+    margin: 0;
   }
 
   .company-information {
     width: 184px;
     padding-right: 90px;
+    font-family: "DIN Pro bold";
   }
 
   .disclosure {
@@ -251,6 +278,11 @@
     line-height: 18px;
     color: #2f2e3e;
     text-decoration: none;
+    margin-top: 0;
+  }
+
+  .orders {
+    margin: 0;
   }
 
   .company-about {
@@ -263,6 +295,7 @@
   .history {
     margin-top: 12px;
     padding-top: 1px;
+    margin-bottom: 10px;
   }
 
   .information {
@@ -274,21 +307,47 @@
     text-decoration: none;
   }
 
+  .vacancy {
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .news {
+    margin-top: -7px;
+    padding: 0;
+  }
+
+  .information-contacts {
+    margin-top: -5px;
+  }
+
   .name {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     padding: 0;
     margin: 0;
-    margin-top: 5px;
+    margin-top: 8px;
   }
 
   .address,
   .phone,
   .email {
+    font-family: "DIN Pro bold";
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .phone {
+    padding-top: 3px;
+    padding-left: 2px;
+    margin-bottom: 0;
+  }
+
+  .email {
+    padding-top: 5px;
+    margin-bottom: 0;
   }
 
   .contacts-address,
@@ -299,9 +358,11 @@
     line-height: 16px;
     margin-top: 0;
     padding-top: 0;
+    margin-left: 3px;
   }
 
   .contacts {
+    padding-top: 7px;
     width: 228px;
     margin-right: 250px;
   }
@@ -310,6 +371,7 @@
     padding-top: 12px;
     padding-bottom: 0;
     margin-bottom: 0;
+    margin-left: 3px;
   }
 
   .area {
@@ -318,9 +380,69 @@
     line-height: 19px;
   }
 
+  .welding {
+    margin-top: -7px;
+  }
+
+  .dismantling {
+    margin-top: -4px;
+  }
+
+  .pipe {
+    margin-top: -5px;
+  }
+
+  .painter {
+    margin-top: -5px;
+  }
+
+  .laboratory {
+    margin-top: -4px;
+  }
+
   .area-activity {
+    font-family: "DIN Pro bold";
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     line-height: 18px; 
+  }
+
+  .company-area {
+    margin-left: 9px;
+    margin-top: 7px;
+  }
+
+  .area:hover,
+  .information:hover,
+  .company:hover,
+  .email-contacts:hover,
+  .contacts-address:hover,
+  .contacts-phone:hover {
+    color: #0055b9;
+  }
+
+  .accordion-profession {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+
+  .accordion-profession:hover {
+    background-color: #0055b9;
+    color: #ffffff;
+  }
+
+  .accordion-item__trigger:hover {
+    color: #ffffff;
+  }
+
+  .about {
+    font-family: "DIN Pro bold";
+    margin-top: 0;
+    padding-top: 0;
   }
