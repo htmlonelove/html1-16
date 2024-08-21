@@ -1,6 +1,5 @@
 const headers = Array.from(document.querySelectorAll(".accordion__header"));
 const burger = document.querySelector(".header__burger");
-console.log(burger);
 
 headers.forEach((header) => {
     header.addEventListener("click", accordionHandler);
