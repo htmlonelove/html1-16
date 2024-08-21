@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дальневосточный завод звезда</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="main-page">
@@ -13,64 +11,94 @@
       <div class="container">
         <div class="header__wrapper">
           <h1 class="visually-hidden">Дальневосточный завод Звезда</h1>
-          <div class="header__logo">
-            <a href="#">
-              <img src="./img/page-logo.svg" width="170"  height="42"  alt="Логотип дальневосточного завода Звезда">
-            </a>
-          </div>
-          <div class="header__nav-wrapper">
-            <nav class="header__nav">
-              <ul class="header__nav-list">
-                <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">О предприятии</a>
-                </li>
-                <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Направления деятельности</a>
-                </li>
-                <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Новости</a>
-                </li>
-                <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Вакансии</a>
-                </li>
-                <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Контакты</a>
-                </li>
-              </ul>
-              <!-- Открытое состояние меню реализуется добавлением класса "active" к классу "header__burger" -->
-              <button class="header__burger" type="button">
-                Меню
-                <span class="header__burger-box"></span>
-              </button>
-              <div class="open-menu">
-                <div class="open-menu__inner">
-                  <div class="open-menu__list">
-                      <a class="open-menu__link" href="#">О предприятии</a>
-                      <a class="open-menu__link" href="#">Руководство</a>
-                      <a class="open-menu__link" href="#">История завода</a>
-                      <a class="open-menu__link" href="#">История заказов</a>
-                  </div>
-                  <div class="open-menu__list">
-                      <a class="open-menu__link" href="#">Раскрытие информации</a>
-                      <a class="open-menu__link" href="#">Торги и закупки</a>
-                      <a class="open-menu__link" href="#">Вакансии</a>
-                      <a class="open-menu__link" href="#">Новости</a>
-                      <a class="open-menu__link" href="#">Контакты</a>
-                  </div>
-                  <div class="open-menu__list">
-                      <p class="open-menu__title">Направления деятельности</p>
-                      <a class="open-menu__sublink" href="#">Судоремонт</a>
-                      <a class="open-menu__sublink" href="#">Судостроение</a>
-                      <a class="open-menu__sublink" href="#">Сварочное производство</a>
-                      <a class="open-menu__sublink" href="#">Демонтажно-монтажные работы</a>
-                      <a class="open-menu__sublink" href="#">Трубопроводное производство</a>
-                      <a class="open-menu__sublink" href="#">Малярно-изоляционно-гуммировочные работы</a>
-                      <a class="open-menu__sublink" href="#">Лабораторный контроль</a>
-                  </div>
-                </div>        
-              </div>
-            </nav>
-          </div>
+          <a class="header__logo" href="#">
+            <img src="./img/page-logo.svg" width="170"  height="42"  alt="Логотип дальневосточного завода Звезда">
+          </a>  
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">О предприятии</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Направления деятельности</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Новости</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Вакансии</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <!-- Открытое состояние меню реализуется добавлением класса "active" к классу "header__burger" -->
+            <button class="header__burger" type="button">
+              <span class="header__burger-caption">Меню</span>
+              <span class="header__burger-box"></span>
+            </button>
+            <div class="open-menu">
+              <div class="open-menu__inner">
+                <ul class="open-menu__list">
+                  <li class="open-menu__link">
+                    <a href="#">О предприятии</a>
+                  </li> 
+                  <li class="open-menu__link">
+                    <a href="#">Руководство</a>
+                  </li>  
+                  <li class="open-menu__link">  
+                    <a href="#">История завода</a>
+                  </li>  
+                  <li class="open-menu__link">  
+                    <a href="#">История заказов</a>
+                  </li>  
+                </ul>
+                <ul class="open-menu__list">
+                  <li class="open-menu__link">
+                    <a href="#">Раскрытие информации</a>
+                  </li>  
+                  <li class="open-menu__link">  
+                    <a href="#">Торги и закупки</a>
+                  </li>
+                  <li class="open-menu__link">  
+                    <a href="#">Вакансии</a>
+                  </li>  
+                  <li class="open-menu__link">  
+                    <a href="#">Новости</a>
+                  </li>
+                  <li class="open-menu__link">
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+                <ul class="open-menu__list">
+                  <li class="open-menu__link">
+                    <a href="#">Направления деятельности</a>
+                  </li>  
+                  <li class="open-menu__sublink">
+                    <a href="#">Судоремонт</a>
+                  </li>  
+                  <li class="open-menu__sublink">  
+                    <a href="#">Судостроение</a>
+                  </li>
+                  <li class="open-menu__sublink">  
+                    <a href="#">Сварочное производство</a>
+                  </li>
+                  <li class="open-menu__sublink">  
+                    <a href="#">Демонтажно-монтажные работы</a>
+                  </li>
+                  <li class="open-menu__sublink">  
+                    <a href="#">Трубопроводное производство</a>
+                  </li>
+                  <li class="open-menu__sublink">  
+                    <a href="#">Малярно-изоляционно-гуммировочные работы</a>
+                  </li>
+                  <li class="open-menu__sublink">  
+                    <a href="#">Лабораторный контроль</a>
+                  </li>
+                </ul>
+              </div>        
+            </div>
+          </nav>
         </div>
       </div>
     </header>
@@ -80,16 +108,15 @@
         <div class="container">
           <div class="accordion__wrapper">
             <!-- Содержимое элемента аккордеона открывается добавлением класса "is-active" к "accordion-item" -->
-            <div class="accordion__item" contenteditable="true">
-              <div class="accordion__header">
+            <div class="accordion__item">
+              <button class="accordion__header" type="button">
                 <h3 class="accordion__title">Ведущий специалист отдела охраны труда</h3>
-                <span class="accordion__unwrap">Подробнее</span>
-                <span class="accordion__wrap">Свернуть</span>
+                <span class="accordion__caption">Подробнее</span>
                 <svg class = "accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="12" cy="12" r="11.5" transform="rotate(90 12 12)" stroke="var(--circle-color)"/>
                   <path opacity="0.7" d="M8 10L12.2426 14.2426L16.4853 10" stroke="var(--arrow-color)" stroke-width="1.5" />
                 </svg>
-              </div>
+              </button>
               <div class="accordion__body">
                 <h4 class="accordion__subtitle">Обязанности</h4>
                 <p class="accordion__text"> Выполнять измерения уровней воздушного шума и локальной вибрации пневмоинструмента. Выполнять измерения уровней воздушного шума и общей вибрации 
@@ -122,16 +149,15 @@
                 </button>        
               </div>
             </div>
-            <div class="accordion__item" contenteditable="true">
-              <div class="accordion__header">
+            <div class="accordion__item">
+              <button class="accordion__header" type="button">
                 <h3 class="accordion__title">Ведущий специалист (по морской безопасности)</h3>
-                <span class="accordion__unwrap">Подробнее</span>
-                <span class="accordion__wrap">Свернуть</span>
+                <span class="accordion__caption">Подробнее</span>
                 <svg class = "accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="12" cy="12" r="11.5" transform="rotate(90 12 12)" stroke="var(--circle-color)"/>
                   <path opacity="0.7" d="M8 10L12.2426 14.2426L16.4853 10" stroke="var(--arrow-color)" stroke-width="1.5" />
                 </svg>
-              </div>
+              </button>
               <div class="accordion__body">
                 <h4 class="accordion__subtitle">Обязанности</h4>
                 <p class="accordion__text"> Выполнять измерения уровней воздушного шума и локальной вибрации пневмоинструмента. Выполнять измерения уровней воздушного шума и общей вибрации 
@@ -164,16 +190,15 @@
                 </button>        
               </div>
             </div>
-            <div class="accordion__item" contenteditable="true">
-              <div class="accordion__header">
+            <div class="accordion__item">
+              <button class="accordion__header" type="button">
                 <h3 class="accordion__title">Токарь 5-6 разряда</h3>
-                <span class="accordion__unwrap">Подробнее</span>
-                <span class="accordion__wrap">Свернуть</span>
+                <span class="accordion__caption">Подробнее</span>
                 <svg class = "accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="12" cy="12" r="11.5" transform="rotate(90 12 12)" stroke="var(--circle-color)"/>
                   <path opacity="0.7" d="M8 10L12.2426 14.2426L16.4853 10" stroke="var(--arrow-color)" stroke-width="1.5" />
                 </svg>
-              </div>
+              </button>
               <div class="accordion__body">
                 <h4 class="accordion__subtitle">Обязанности</h4>
                 <p class="accordion__text"> Выполнять измерения уровней воздушного шума и локальной вибрации пневмоинструмента. Выполнять измерения уровней воздушного шума и общей вибрации 
@@ -206,16 +231,15 @@
                 </button>        
               </div>
             </div>
-            <div class="accordion__item is-active" contenteditable="true">
-              <div class="accordion__header">
+            <div class="accordion__item is-active">
+              <button class="accordion__header" type="button">
                 <h3 class="accordion__title">Инженер лаборатории технической диагностики</h3>
-                <span class="accordion__unwrap">Подробнее</span>
-                <span class="accordion__wrap">Свернуть</span>
+                <span class="accordion__caption">Свернуть</span>
                 <svg class = "accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="12" cy="12" r="11.5" transform="rotate(90 12 12)" stroke="var(--circle-color)"/>
                   <path opacity="0.7" d="M8 10L12.2426 14.2426L16.4853 10" stroke="var(--arrow-color)" stroke-width="1.5" />
                 </svg>
-              </div>
+              </button>
               <div class="accordion__body">
                 <h4 class="accordion__subtitle">Обязанности</h4>
                 <p class="accordion__text"> Выполнять измерения уровней воздушного шума и локальной вибрации пневмоинструмента. Выполнять измерения уровней воздушного шума и общей вибрации 
@@ -248,16 +272,15 @@
                 </button>        
               </div>
             </div>
-            <div class="accordion__item" contenteditable="true">
-              <div class="accordion__header">
+            <div class="accordion__item">
+              <button class="accordion__header" type="button">
                 <h3 class="accordion__title">Токарь 5-6 разряда</h3>
-                <span class="accordion__unwrap">Подробнее</span>
-                <span class="accordion__wrap">Свернуть</span>
+                <span class="accordion__caption">Подробнее</span>
                 <svg class = "accordion__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="12" cy="12" r="11.5" transform="rotate(90 12 12)" stroke="var(--circle-color)"/>
                   <path opacity="0.7" d="M8 10L12.2426 14.2426L16.4853 10" stroke="var(--arrow-color)" stroke-width="1.5" />
                 </svg>
-              </div>
+              </button>
               <div class="accordion__body">
                 <h4 class="accordion__subtitle">Обязанности</h4>
                 <p class="accordion__text"> Выполнять измерения уровней воздушного шума и локальной вибрации пневмоинструмента. Выполнять измерения уровней воздушного шума и общей вибрации 
@@ -294,71 +317,70 @@
         </div>
       </section>
       <section class="events">
+        <h2 class="events__titles">Новости</h2>
         <div class="container">
-          <div class="events__wrapper">
-            <div class="events__inner">
-              <h2 class="events__titles">Новости</h2>
-              <div class="events__header">
-                <p class="events__description">Новости / события</p>
-                <a class="events__button" href="#">
-                  <span class="events__button-caption">Все новости</span>
-                  <svg class="events__button-icon" width="7" height="11" viewBox="0 0 7 11" fill="none"          xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.7" d="M1 10L5.24264 5.75736L0.999999 1.51472" stroke="white" stroke-width="1.5"/>
-                  </svg>       
-                </a>
-              </div>
-              <ul class="events__list">
-              <li class="events__item">
-                  <h3 class="visually-hidden">Новость</h3>
-                  <a class="events__link news-card" href="#">
-                    <div class="news-card__img-box">
-                      <img class="news-card__img" src="./img/img-1.jpg" width ="350" height="250" alt="Иллюстрация события">
-                    </div> 
-                    <p class="news-card__title">Дальневосточный завод &laquo;Звезда&raquo;</p>
-                    <p class="news-card__description">Строительство доккамеры, первые суда вытаскивали на берег бульдозеты.</p>
-                    <time class="news-card__date" datetime="2021-03-10">10.03.21</time>
-                  </a>
-                </li>
-                <li class="events__item">
-                  <h3 class="visually-hidden">Новость</h3>
-                  <a class="events__link news-card" href="#">
-                    <div class="news-card__img-box">
-                      <img class="news-card__img" src="./img/img-2.jpg" width ="350" height="250" alt="Иллюстрация события">
-                    </div> 
-                    <p class="news-card__title">Дальневосточный завод &laquo;Звезда&raquo;</p>
-                    <p class="news-card__description">Строительство доккамеры, первые суда вытаскивали на берег бульдозеты.</p>
-                    <time class="news-card__date" datetime="2021-03-10">10.03.21</time>
-                  </a>
-                </li>
-                <li class="events__item" >
-                  <h3 class="visually-hidden">Новость</h3>
-                  <a class="events__link news-card" href="#">
-                    <div class="news-card__img-box">
-                      <img class="news-card__img" src="./img/img-3.jpg" width ="350" height="250" alt="Иллюстрация события">
-                    </div> 
-                    <p class="news-card__title">Дальневосточный завод &laquo;Звезда&raquo;</p>
-                    <p class="news-card__description">Строительство доккамеры, первые суда вытаскивали на берег бульдозеты.</p>
-                    <time class="news-card__date" datetime="2021-03-10">10.03.21</time>
-                  </a>
-                </li>
-                <li class="events__item">
-                  <h3 class="visually-hidden">Новость</h3>
-                  <a class="events__link news-card" href="#">
-                    <div class="news-card__img-box">
-                      <img class="news-card__img" src="./img/img-4.jpg" width ="350" height="250" alt="Иллюстрация события">
-                    </div> 
-                    <p class="news-card__title">Дальневосточный завод &laquo;Звезда&raquo;</p>
-                    <p class="news-card__description">Строительство доккамеры, первые суда вытаскивали на берег бульдозеты.</p>
-                    <time class="news-card__date" datetime="2021-03-10">10.03.21</time>
-                  </a>
-                </li>
-              </ul>
+          <div class="events__inner">
+            <div class="events__header">
+              <p class="events__description">Новости / события</p>
+              <a class="events__button" href="#">
+                <span class="events__button-caption">Все новости</span>
+                <svg class="events__button-icon" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.7" d="M1 10L5.24264 5.75736L0.999999 1.51472" stroke="white" stroke-width="1.5"/>
+                </svg>       
+              </a>
             </div>
+            <ul class="events__list">
+              <li class="events__item">
+                <h3 class="visually-hidden">Новость</h3>
+                <a class="events__link news-card" href="#">
+                  <div class="news-card__img-box">
+                    <img class="news-card__img" src="./img/fish-and-boot.jpg" width ="350" height="250" alt="Субмарина и рыба">
+                  </div> 
+                  <p class="news-card__title">Дальневосточный завод &laquo;Звезда&raquo;</p>
+                  <p class="news-card__description">Строительство доккамеры, первые суда вытаскивали на берег бульдозеты.</p>
+                  <time class="news-card__date" datetime="2021-03-10">10.03.21</time>
+                </a>
+              </li>
+              <li class="events__item">
+                <h3 class="visually-hidden">Новость</h3>
+                <a class="events__link news-card" href="#">
+                  <div class="news-card__img-box">
+                    <img class="news-card__img" src="./img/dry-dock.jpg" width ="350" height="250" alt="Субмарина в сухом доке">
+                  </div> 
+                  <p class="news-card__title">Дальневосточный завод &laquo;Звезда&raquo;</p>
+                  <p class="news-card__description">Строительство доккамеры, первые суда вытаскивали на берег бульдозеты.</p>
+                  <time class="news-card__date" datetime="2021-03-10">10.03.21</time>
+                </a>
+              </li>
+              <li class="events__item" >
+                <h3 class="visually-hidden">Новость</h3>
+                <a class="events__link news-card" href="#">
+                  <div class="news-card__img-box">
+                    <img class="news-card__img" src="./img/boot-and-tugboat.jpg" width ="350" height="250" alt="Субмарина и буксир возле пирса">
+                  </div> 
+                  <p class="news-card__title">Дальневосточный завод &laquo;Звезда&raquo;</p>
+                  <p class="news-card__description">Строительство доккамеры, первые суда вытаскивали на берег бульдозеты.</p>
+                  <time class="news-card__date" datetime="2021-03-10">10.03.21</time>
+                </a>
+              </li>
+              <li class="events__item">
+                <h3 class="visually-hidden">Новость</h3>
+                <a class="events__link news-card" href="#">
+                  <div class="news-card__img-box">
+                    <img class="news-card__img" src="./img/worker.jpg" width ="350" height="250" alt="Рабочий за работой">
+                  </div> 
+                  <p class="news-card__title">Дальневосточный завод &laquo;Звезда&raquo;</p>
+                  <p class="news-card__description">Строительство доккамеры, первые суда вытаскивали на берег бульдозеты.</p>
+                  <time class="news-card__date" datetime="2021-03-10">10.03.21</time>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
     <footer>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
