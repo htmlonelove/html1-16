@@ -89,7 +89,6 @@ body {
     top: 5px;
 }
 
-
 .about-caption {
     margin: 0;
     padding: 0;
@@ -112,7 +111,6 @@ body {
     background-color: #ff0000;
     left: -38px;
 }
-
 
 .about-description {
     margin: 0;
@@ -147,7 +145,6 @@ body {
     transition: transform 0.5s;
     display: inline-block;
 }
-
 
 .more-link-icon svg {
     padding: 5px 7px 6px 8px;
