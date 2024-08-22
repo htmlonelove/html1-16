@@ -1,0 +1,369 @@
+@font-face {
+  font-family: "DINPro";
+  src: url("fonts/DINPro.woff2") format("woff2"),
+    url("fonts/DINPro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DINPro";
+  src: url("fonts/din-pro-medium.woff") format("woff1"),
+    url("fonts/din-pro-medium.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DINPro Condensed";
+  src: url("fonts/DINPro-CondensedBold.woff2") format("woff2"),
+    url("fonts/DINPro-CondensedBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DINPro", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #2f2e3e;
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-width: 1920px;
+}
+
+.page-container {
+  width: 1920px;
+  margin: 0 auto;
+  background-color: #f8f9fb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.span-wrap {
+  display: block;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.area-of-activity {
+  padding: 96px 197px 96px 196px;
+  counter-reset: card-counter;
+}
+
+.section_title {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #0055b9;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0 68px 30px;
+  position: relative;
+}
+
+.section_title::before {
+  content: '';
+  border-left: 12px solid transparent;
+  border-bottom: 12px solid #ff0000;
+  position: absolute;
+  left: -22px;
+  top: 5px;
+}
+
+.activity_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+}
+
+.big-activity-item {
+  grid-row: span 2;
+}
+
+.activity-card {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  background-color: #0055b9;
+  padding: 40px;
+  overflow: hidden;
+  counter-increment: card-counter;
+}
+
+.activity-card:hover::after {
+  content: counter(card-counter);
+  position: absolute;
+  color: #f8f9fb;
+  font-family: "DINPro Condensed", sans-serif;
+  font-size: 270px;
+  line-height: 324px;
+  font-weight: 700;
+  bottom: 0;
+  right: 0;
+  transform: translate(20px, 68px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.activity-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 85, 185, 0.6);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.photo-background_ship-repair {
+  background-image: url("img/area-of-activity/photo-card_ship-repair.png");
+  height: 640px;
+  width: 763px;
+}
+
+.photo-background_shipbuilding {
+  background-image: url("img/area-of-activity/photo-card_shipbuilding.png");
+  height: 320px;
+  width: 763px;
+}
+
+.photo-background_welding-production {
+  background-image: url("img/area-of-activity/photo-card_welding-production.png");
+  height: 319px;
+  width: 763px;
+}
+
+.photo-background_dismaunt-mount-works {
+  background-image: url("img/area-of-activity/photo-card_dismaunt-mount-works.png");
+  height: 320px;
+  width: 763px;
+}
+
+.photo-background_pipeline-manufacturing {
+  background-image: url("img/area-of-activity/photo-card_pipeline-manufacturing.png");
+  height: 320px;
+  width: 763px;
+}
+
+.photo-background_painting-works {
+  background-image: url("img/area-of-activity/photo-card_painting-works.png");
+  height: 320px;
+  width: 763px;
+}
+
+.photo-background_laboratory-control {
+  background-image: url("img/area-of-activity/photo-card_laboratory-control.png");
+  height: 320px;
+  width: 763px;
+}
+
+.about-activity {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.about-activity span {
+  padding: 3px 0;
+}
+
+.about-activity svg {
+  background-position: center;
+  padding: 5px 7px 6px 8px;
+  width: 7px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.activity-title {
+  font-family: "DINPro Condensed", sans-serif;
+  font-size: 42px;
+  line-height: 46px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  margin: auto 40px 20px 0;
+}
+
+.title-big-card {
+  font-size: 68px;
+  line-height: 75px;
+  margin: auto 40px 25px 0;
+}
+
+.about-activity svg:hover {
+  transform: translateX(2px);
+}
+
+.activity-card:hover {
+  background-image: none;
+  background-color: #dfe4ee;
+}
+
+.activity-card:hover .activity-title {
+  color: #2f2e3e;
+}
+
+.activity-card:hover .about-activity {
+  color: #000000;
+}
+
+.activity-card:hover .about-activity svg {
+  border: 1px solid #b9c8d2;
+}
+
+.activity-card:hover .about-activity svg path {
+  stroke: #2f2e3e;
+}
+
+.activity-card:hover::before {
+  background-color: transparent;
+}
+
+.about-company {
+  margin: 82px 196px 87px;
+}
+
+.text-about-company {
+  display: grid;
+  grid-template-columns: 688px 764px;
+  gap: 76px;
+}
+
+.title-about {
+  margin: 20px 57px 24px;
+}
+
+.article-content {
+  opacity: 0.7;
+  width: 654px;
+  padding-left: 33px;
+}
+
+.article-content p {
+  margin: 27px 0;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.article-content p:first-of-type {
+  margin-top: 0;
+}
+
+.article-content p:last-of-type {
+  margin-bottom: 0;
+}
+
+.services-with-img {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 58px;
+}
+
+.view_factory {
+  height: 444px;
+  width: 764px;
+  display: block;
+  align-self: flex-start;
+  background-color: #9bacbb;
+  position: relative;
+}
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-left: 99px solid #f8f9fb;
+  border-top: 88px solid transparent;
+  z-index: 2;
+}
+
+.services-title {
+  margin: 0 58px 30px;
+}
+
+.services-title::before {
+  left: -30px;
+}
+
+.services_list {
+  list-style-type: none;
+  padding: 0 0 0 28px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 283px 283px;
+  gap: 30px 85px;
+}
+
+.services-name {
+  font-family: "DINPro Condensed", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: auto 0 15px 0;
+}
+
+.services-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.7;
+}
