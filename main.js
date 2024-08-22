@@ -18,6 +18,6 @@ function accordionHandler(e) {
 
 burger.addEventListener("click", burgerHandler);
 
-function burgerHandler() {
+function burgerHandler(e) {
     burger.classList.toggle("active");
 }
