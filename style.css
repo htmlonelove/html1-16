@@ -1,7 +1,7 @@
 @font-face {
   font-family: "DINPro";
-  src: url('fonts/DINPro.woff2') format('woff2'),
-       url('fonts/DINPro.woff') format('woff');
+  src: url("fonts/DINPro.woff2") format("woff2"),
+    url("fonts/DINPro.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: "DINPro";
-  src: url('fonts/din-pro-medium.woff') format('woff1'),
-       url('fonts/din-pro-medium.woff2') format('woff2');
+  src: url("fonts/din-pro-medium.woff") format("woff1"),
+    url("fonts/din-pro-medium.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: "DINPro Condensed";
-  src: url('fonts/DINPro-CondensedBold.woff2') format('woff2'),
-       url('fonts/DINPro-CondensedBold.woff') format('woff');
+  src: url("fonts/DINPro-CondensedBold.woff2") format("woff2"),
+    url("fonts/DINPro-CondensedBold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -36,8 +36,8 @@ body {
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
-  color: #2F2E3E;
-  background-color: #E5E5E5;
+  color: #2f2e3e;
+  background-color: #e5e5e5;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -47,7 +47,7 @@ body {
 .page-container {
   width: 1920px;
   margin: 0 auto;
-  background-color: #F8F9FB;
+  background-color: #f8f9fb;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -75,13 +75,14 @@ img {
 
 .area-of-activity {
   padding: 96px 197px 96px 196px;
+  counter-reset: card-counter;
 }
 
 .section_title {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  color: #0055B9;
+  color: #0055b9;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   margin: 0 68px 30px;
@@ -91,7 +92,7 @@ img {
 .section_title::before {
   content: '';
   border-left: 12px solid transparent;
-  border-bottom: 12px solid #FF0000;
+  border-bottom: 12px solid #ff0000;
   position: absolute;
   left: -22px;
   top: 5px;
@@ -118,51 +119,25 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   box-sizing: border-box;
-  background-color: #0055B9;
+  background-color: #0055b9;
   padding: 40px;
   overflow: hidden;
+  counter-increment: card-counter;
 }
 
-.photo_background-1 {
-  background-image: url('img/area-of-activity/photo-card_1.png');
-  height: 640px;
-  width: 763px;
-}
-
-.photo_background-2 {
-  background-image: url('img/area-of-activity/photo-card_2.png');
-  height: 320px;
-  width: 763px;
-}
-
-.photo_background-3 {
-  background-image: url('img/area-of-activity/photo-card_3.png');
-  height: 319px;
-  width: 763px;
-}
-
-.photo_background-4 {
-  background-image: url('img/area-of-activity/photo-card_4.png');
-  height: 320px;
-  width: 763px;
-}
-
-.photo_background-5 {
-  background-image: url('img/area-of-activity/photo-card_5.png');
-  height: 320px;
-  width: 763px;
-}
-
-.photo_background-6 {
-  background-image: url('img/area-of-activity/photo-card_6.png');
-  height: 320px;
-  width: 763px;
-}
-
-.photo_background-7 {
-  background-image: url('img/area-of-activity/photo-card_7.png');
-  height: 320px;
-  width: 763px;
+.activity-card:hover::after {
+  content: counter(card-counter);
+  position: absolute;
+  color: #f8f9fb;
+  font-family: "DINPro Condensed", sans-serif;
+  font-size: 270px;
+  line-height: 324px;
+  font-weight: 700;
+  bottom: 0;
+  right: 0;
+  transform: translate(20px, 68px);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .activity-card::before {
@@ -172,9 +147,51 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 85, 185, 0.6); 
+  background-color: rgba(0, 85, 185, 0.6);
   pointer-events: none;
-  z-index: 1
+  z-index: 1;
+}
+
+.photo-background_ship-repair {
+  background-image: url("img/area-of-activity/photo-card_ship-repair.png");
+  height: 640px;
+  width: 763px;
+}
+
+.photo-background_shipbuilding {
+  background-image: url("img/area-of-activity/photo-card_shipbuilding.png");
+  height: 320px;
+  width: 763px;
+}
+
+.photo-background_welding-production {
+  background-image: url("img/area-of-activity/photo-card_welding-production.png");
+  height: 319px;
+  width: 763px;
+}
+
+.photo-background_dismaunt-mount-works {
+  background-image: url("img/area-of-activity/photo-card_dismaunt-mount-works.png");
+  height: 320px;
+  width: 763px;
+}
+
+.photo-background_pipeline-manufacturing {
+  background-image: url("img/area-of-activity/photo-card_pipeline-manufacturing.png");
+  height: 320px;
+  width: 763px;
+}
+
+.photo-background_painting-works {
+  background-image: url("img/area-of-activity/photo-card_painting-works.png");
+  height: 320px;
+  width: 763px;
+}
+
+.photo-background_laboratory-control {
+  background-image: url("img/area-of-activity/photo-card_laboratory-control.png");
+  height: 320px;
+  width: 763px;
 }
 
 .about-activity {
@@ -187,7 +204,7 @@ img {
   font-size: 12px;
   line-height: 18px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
@@ -202,17 +219,17 @@ img {
   width: 7px;
   height: 11px;
   border-radius: 50%;
-  border: 1px solid #FFFFFF;
-  position: relative; 
+  border: 1px solid #ffffff;
+  position: relative;
   transition: transform 0.3s ease;
 }
 
 .activity-title {
-  font-family: "DINPro Condensed";
+  font-family: "DINPro Condensed", sans-serif;
   font-size: 42px;
   line-height: 46px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   position: relative;
   z-index: 2;
@@ -230,78 +247,35 @@ img {
 }
 
 .activity-card:hover {
-  background-image: none; 
-  background-color: #DFE4EE; 
+  background-image: none;
+  background-color: #dfe4ee;
 }
 
 .activity-card:hover .activity-title {
-  color: #2F2E3E;
+  color: #2f2e3e;
 }
 
 .activity-card:hover .about-activity {
-  color: #000000; 
+  color: #000000;
 }
 
 .activity-card:hover .about-activity svg {
-  border: 1px solid  #B9C8D2;
+  border: 1px solid #b9c8d2;
 }
 
 .activity-card:hover .about-activity svg path {
-  stroke: #2F2E3E;
-}
-
-.activity-card:hover::after {
-  content: '';
-  position: absolute;
-  color: #F8F9FB; 
-  font-family: "DINPro Condensed";
-  font-size: 270px;
-  line-height: 324px;
-  font-weight: 700;
-  bottom: 0;
-  right: 0;
-  transform: translate(20px, 68px); 
-  z-index: 1;
-  pointer-events: none;
-}
-
-.photo_background-1:hover::after {
-  content: '1';
-}
-
-.photo_background-2:hover::after {
-  content: '2';
-}
-
-.photo_background-3:hover::after {
-  content: '3';
-}
-
-.photo_background-4:hover::after {
-  content: '4';
-}
-
-.photo_background-5:hover::after {
-  content: '5';
-}
-
-.photo_background-6:hover::after {
-  content: '6';
-}
-
-.photo_background-7:hover::after {
-  content: '7';
+  stroke: #2f2e3e;
 }
 
 .activity-card:hover::before {
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 .about-company {
   margin: 82px 196px 87px;
 }
 
-.text-about-company{
+.text-about-company {
   display: grid;
   grid-template-columns: 688px 764px;
   gap: 76px;
@@ -342,19 +316,23 @@ img {
   margin-bottom: 58px;
 }
 
-.view_zvezda { 
+.view_factory {
   height: 444px;
   width: 764px;
   display: block;
-  align-self: flex-start; 
-  background-color: #9BACBB;
+  align-self: flex-start;
+  background-color: #9bacbb;
+  position: relative;
 }
 
-.triangle {
+.image-container::after {
+  content: '';
   position: absolute;
   bottom: 0;
-  border-left: 99px solid #F8F9FB;
+  left: 0;
+  border-left: 99px solid #f8f9fb;
   border-top: 88px solid transparent;
+  z-index: 2;
 }
 
 .services-title {
@@ -375,7 +353,7 @@ img {
 }
 
 .services-name {
-  font-family: "DINPro Condensed";
+  font-family: "DINPro Condensed", sans-serif;
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
