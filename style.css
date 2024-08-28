@@ -84,7 +84,7 @@ body {
 }
 
 .crazy-button-up {
-   margin-top: 29px;
+   margin-top: 39px;
    margin-right: 20px;
    margin-left: -26px;
 }
@@ -369,12 +369,17 @@ body {
   color: #ffffff;
   background-color: #0055b9;
 }
- 
-.accordion-item__trigger:hover {
+
+div:hover > div {
+  color: #ffffff;
+  background-color: #0055b9; 
+}
+
+div:hover  button {
   color: #ffffff;
   background-color: #0055b9;
 }
-  
+
 .about {
   font-family: "DIN Pro bold";
   margin-top: 0;
